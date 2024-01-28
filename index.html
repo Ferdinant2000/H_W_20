@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+
+    <nav class="bg-[#FBF9EA] border-gray-200 sm:px-[40] lg:px-[11%]">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto h-[83px] px-[30px] sm:px-0 ">
+            <button data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-[#4C5930] rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200 "
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <svg xmlns="http://www.w3.org/2000/svg" width="107" height="33" viewBox="0 0 107 33" fill="none">
+                    <path
+                        d="M5.41608 10.6934V7.89894H0.3125V24.7402H5.41608V16.9157C5.41608 14.0095 6.81131 13.1525 9.23459 13.1525H10.5931V7.71265C8.39011 7.71265 6.55429 8.90494 5.41608 10.6934Z"
+                        fill="#4C5930" />
+                    <path
+                        d="M17.1286 14.6801C17.4223 12.8171 18.7074 11.7738 20.3597 11.7738C22.0486 11.7738 23.4805 12.8171 23.4805 14.6801H17.1286ZM20.4331 7.63806C15.4764 7.63806 12.025 10.9541 12.025 16.3195C12.025 21.6476 15.5498 25.0009 20.4331 25.0009C24.582 25.0009 27.5194 22.4673 28.3271 19.1884H22.8931C22.4892 20.0827 21.6814 20.8279 20.2495 20.8279C18.5973 20.8279 17.2755 19.7846 17.0919 17.5863H28.6208C28.6943 17.0647 28.6943 16.543 28.6943 16.0587C28.6943 10.9169 25.2797 7.63806 20.4331 7.63806Z"
+                        fill="#4C5930" />
+                    <path
+                        d="M39.1952 20.4927C37.286 20.4927 35.5603 18.965 35.5603 16.2824C35.5603 13.5997 37.286 12.1466 39.1952 12.1466C41.1412 12.1466 42.8301 13.637 42.8301 16.3196C42.8301 19.0023 41.1045 20.4927 39.1952 20.4927ZM42.8301 7.56369V10.2091C41.8021 8.68147 39.9295 7.63821 37.7266 7.63821C33.651 7.63821 30.42 10.9543 30.42 16.2824C30.3833 21.6104 33.6143 24.9638 37.6898 24.9638C40.1131 24.9638 41.8755 23.846 42.7934 22.3184V24.7402H47.897V2.38464C45.1066 2.38464 42.8301 4.69472 42.8301 7.56369Z"
+                        fill="#4C5930" />
+                    <path
+                        d="M59.389 20.4925C57.4797 20.4925 55.7541 18.9649 55.7541 16.2822C55.7541 13.5996 57.4797 12.1464 59.389 12.1464C61.335 12.1464 63.0239 13.6368 63.0239 16.3195C63.0239 19.0022 61.335 20.4925 59.389 20.4925ZM63.0239 10.2835C62.1427 8.7931 60.3803 7.63806 57.9203 7.63806C53.8448 7.63806 50.6138 10.9541 50.6138 16.2822C50.6138 21.6103 53.8448 24.9636 57.9203 24.9636C60.3803 24.9636 62.1427 23.8086 63.0606 22.3182V24.7028H68.1642V7.89888H63.0606V10.2835H63.0239Z"
+                        fill="#4C5930" />
+                    <path d="M76.903 7.89893H71.7994V24.7401H76.903V7.89893Z" fill="#4C5930" />
+                    <path d="M80.5745 5.29083V24.8147H85.678V0.149048C82.8509 0.149048 80.5745 2.45912 80.5745 5.29083Z"
+                        fill="#4C5930" />
+                    <path
+                        d="M100.805 7.89905L97.0236 18.4434L93.1683 7.89905H87.4773L94.2331 24.1814L90.4146 32.751H95.9221L106.313 7.89905H100.805Z"
+                        fill="#4C5930" />
+                    <path d="M72.0194 5.06727H77.0128V0C74.2591 0 72.0194 2.27282 72.0194 5.06727Z" fill="#4C5930" />
+                </svg>
+            </a>
+            <div class="hidden w-full md:block md:w-auto ">
+                <ul
+                    class=" flex flex-col p-4 md:p-0 mt-4 border border-gray-100  rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 ">
+                    <li>
+                        <a href="#" class=" block py-2 px-3 text-black rounded md:border-0 md:p-0">Our products</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-3 text-black rounded md:border-0 md:p-0">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-3 text-black rounded md:border-0 md:p-0">Contacts</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-3 text-black rounded md:border-0 md:p-0">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div
+        class="w-full h-[169px] sm:h-[200px] md:h-[300px]  bg-no-repeat bg-cover bg-center flex items-center justify-center md:justify-normal sm:px-[40px] lg:px-[11%]  bg-[url('https://s3-alpha-sig.figma.com/img/5a15/f8e5/91ee485f3b635a175bccf14f059df847?Expires=1707091200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=du4w39hf96nOS9KckbLyBnzXgSSWW-fMw6TSbIq27KDpQ3D5qrWpCjLE5Y78OLVXem6R-fD3otGJXAnc2r6vlW8SKBtV-Sw-S-g~7-4ztMQCFFwytx1qipX~gcFjz4y92YfkoVHecqTAYpW3fpQ~k6WxtnP7LYj4nt7Ig1J3g~oWCCgDL83NDMCflwxdidtzOGf5qWgIzc4i9fXtxsLw9FiOPnXBwKdftzJtQLQKddPg-B95iFkrXfNVNHRpyYJnn5dbOqGi1RA05-5uXpBhJiqkjg2q~yebXJQkSfdynrT3MbxXZY3GtwyY3i9I8xCfc~50EcNJ8mkTQJSQdV7olg__')]">
+        <div class="">
+            <p class="text-[#F3E89F] text-[20px] text-center sm:text-[25px] md:text-[40px] md:text-left">ABOUT <br> <span class="font-[700]">THE
+                    COMPANY</span>
+            </p>
+        </div>
+    </div>
+    <div class="w-full  text-center">
+        <div class=" w-full flex justify-center md:justify-normal items-center flex-wrap px-[34px] sm:px-[40px] lg:px-[11%] py-[36px] md:text-left">
+            <p class="text-[#E77622] text-[18px] mb-[10px] sm:text-[20px] lg:text-[30px] ">ABOUT <span class="font-[700]">US</span></p>
+            <p class="text-[#4B5A31] text-[12px] lg:text-[13px] leading-[19.8px]"> The ReDaily project, like many others, was born in
+                bath. One of our team members complained about
+                how many different bottles he had in his bathroom. He was especially afraid of what was going to happen
+                to
+                all those bottles after. And rightfully so, as at best some of them would be only partially recycled.
+            </p>
+        </div>
+        <div class="w-full bg-[#FBF9EA] text-[#4B5A31] px-[31px] sm:px-[40px] lg:px-[11%]">
+            <div class=" w-full flex flex-wrap justify-center md:justify-between md:py-[40px] py-[31px]">
+                <img class="h-[100px] sm:h-[130px]" src="./icons/icon12.svg" alt="">
+                <div class="md:text-left mt-[16px] md:w-[75%] xl:w-[80%] ">
+                    <p class="text-[18px] lg:text-[22px]">THE BIG <span class="font-[700]">PROBLEM</span></p>
+                    <p class="text-[12px] lg:text-[13.5px] leading-[19.8px] mt-[10px]">And that is when we realized that, in fact the problem was
+                        much bigger than just our
+                        overflowing bathrooms, because there are millions of such bathrooms all over the globe. And
+                        every
+                        day more and more bottles go through them on a one-way journey. Resulting in million tons of
+                        plastic
+                        every year.</p>
+                </div>
+            </div>
+            <div class="border w-full border-[#4C5930] lg:hidden"></div>    
+            <div class=" w-full flex flex-wrap justify-center md:justify-between md:py-[40px] py-[31px]">
+                <img class="h-[100px] sm:h-[130px]" src="./icons/12icon.svg" alt="">
+                <div class="md:text-left mt-[16px] md:w-[75%] xl:w-[80%] ">
+                    <p class="text-[18px] lg:text-[22px] md:flex md:items-center ">WE WANTED TO <span
+                            class="font-[700]">UNDERSTAND</span></p>
+                    <p class="text-[12px] lg:text-[13.5px] leading-[19.8px] mt-[10px]">We set out to find out why, in the 21st century,
+                        we
+                        still cannot
+                        solve this problem. After talking with people from all side of the “eco-friendly" debate, we
+                        found
+                        out that zero-waste products are quite difficult to access and afford.</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="w-full bg-[#4C5930] flex flex-wrap justify-between py-[65px] px-[54px] text-left xl:px-[222px]">
+            <div class="w-full md:w-[30%] md:pt-[10px] md:h-[50vh] lg:h-[45vh] bg-white px-[21px] pt-[35px] pb-[30px]">
+                <div class="w-full flex items-center justify-end md:flex hidden h-[60px] lg:mt-[10px] "><img
+                        src="./icons/icon 1.svg" alt=""></div>
+                <p class="md:h-[50px] text-[#4C5930] font-[700] text-[14px] flex justify-between items-center">
+                    ENVIRONMENTALLY <br> FRIENDLY
+                    <span><img class="md:hidden" src="./icons/icon 1.svg" alt=""></span>
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" class="relative mt-[30px] md:mt-[20px] right-[21px]" width="189"
+                    height="11" viewBox="0 0 189 11" fill="none">
+                    <path
+                        d="M181.999 4.59283C184.027 4.7053 186.832 5.08022 189 5.10271C189 5.10271 188.993 5.10271 188.986 5.09521C187.916 5.02773 186.097 4.82527 185.111 4.76529C186.321 4.83277 187.545 4.90026 188.762 4.96774C188.594 4.87776 188.391 4.79528 188.182 4.7053C187.286 4.59283 186.391 4.49535 185.44 4.44286C186.244 4.48785 187.056 4.53284 187.86 4.57783C187.3 4.36788 186.65 4.15793 185.929 3.96297C183.139 3.46808 180.516 2.81573 178.956 2.72575C166.408 1.86345 153.756 1.10612 141.068 0.603733C140.991 0.806187 141.621 1.03863 140.55 1.09862C137.193 1.1736 134.696 0.393781 131.332 0.48376C131.227 0.588736 131.122 0.701211 131.017 0.806187C128.478 0.588736 125.848 0.311299 123.149 0.0938487C118.099 0.0113674 113.056 -0.0186257 108.02 0.0113674C108.125 0.138838 108.167 0.251313 107.656 0.281306C105.558 0.341292 102.69 0.17633 99.6968 0.123842C99.2491 0.138838 98.8015 0.153835 98.3679 0.168832C98.0111 0.236316 97.9062 0.356289 97.8363 0.423774C96.4864 0.401279 95.2834 0.356289 94.1713 0.326296C86.7573 0.611231 79.2594 1.03863 71.6007 1.52602C63.9699 2.03591 10.6733 2.62827 2.76275 2.80073C1.8395 2.86072 0.923248 2.91321 0 2.9582V10.254C4.27352 10.3665 54.1289 10.374 58.3674 10.3365C60.5217 10.1941 65.7324 9.9841 72.37 9.77415C79.0076 9.57919 87.2189 9.45172 95.6121 9.46672C112.398 9.46672 129.891 10.0516 137.011 10.419C137.445 10.4265 137.879 10.4415 138.312 10.449C146.097 10.7864 155.588 11.1088 162.303 10.9589C165.401 10.8164 168.57 10.629 171.724 10.4415C170.346 10.1791 169.08 9.92412 167.982 9.68417C171.102 9.85663 174.214 10.0216 175.466 9.87163C182.251 9.68417 178.641 8.91934 176.291 7.99705C174.543 7.56215 177.173 7.14225 174.389 6.64736C176.466 6.75983 177.501 6.81982 179.586 6.93979C179.914 6.61737 173.13 6.80482 174.718 6.32493C176.683 6.54988 178.984 6.4524 181.061 6.56488C180.46 6.07749 173.892 6.05499 174.333 5.62759C175.487 5.5751 180.019 6.51239 180.572 5.97251C180.684 5.86754 178.599 5.74756 177.564 5.68758C184.02 5.82255 187.692 5.46263 181.999 4.57783V4.59283Z"
+                        fill="#E77622" />
+                </svg>
+                <p class="text-[12px] leading-[15.6px] mt-[21px] md:mt-[35px]">Our approach to packaging helps to save
+                    up to 96%
+                    of potential plastic consumption per year, while pleasantly surprise you with its eco-friendly
+                    composition.</p>
+            </div>
+            <div class="w-full md:w-[30%] md:pt-[10px] md:h-[50vh] lg:h-[45vh] bg-white md:my-0 my-[21px] px-[21px] py-[37px]">
+                <div class="w-full flex items-center justify-end md:flex hidden h-[60px] lg:mt-[10px] "><img
+                        src="./icons/icon 3.svg" alt=""></div>
+                <p class="md:h-[50px] text-[#4C5930] font-[700] text-[14px] flex justify-between items-center">
+                    FUNCTIONALITY
+                    <span><img class="md:hidden" src="./icons/icon 3.svg" alt=""></span>
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" class="relative mt-[30px] md:mt-[20px] right-[21px]" width="189"
+                    height="11" viewBox="0 0 189 11" fill="none">
+                    <path
+                        d="M181.999 4.59283C184.027 4.7053 186.832 5.08022 189 5.10271C189 5.10271 188.993 5.10271 188.986 5.09521C187.916 5.02773 186.097 4.82527 185.111 4.76529C186.321 4.83277 187.545 4.90026 188.762 4.96774C188.594 4.87776 188.391 4.79528 188.182 4.7053C187.286 4.59283 186.391 4.49535 185.44 4.44286C186.244 4.48785 187.056 4.53284 187.86 4.57783C187.3 4.36788 186.65 4.15793 185.929 3.96297C183.139 3.46808 180.516 2.81573 178.956 2.72575C166.408 1.86345 153.756 1.10612 141.068 0.603733C140.991 0.806187 141.621 1.03863 140.55 1.09862C137.193 1.1736 134.696 0.393781 131.332 0.48376C131.227 0.588736 131.122 0.701211 131.017 0.806187C128.478 0.588736 125.848 0.311299 123.149 0.0938487C118.099 0.0113674 113.056 -0.0186257 108.02 0.0113674C108.125 0.138838 108.167 0.251313 107.656 0.281306C105.558 0.341292 102.69 0.17633 99.6968 0.123842C99.2491 0.138838 98.8015 0.153835 98.3679 0.168832C98.0111 0.236316 97.9062 0.356289 97.8363 0.423774C96.4864 0.401279 95.2834 0.356289 94.1713 0.326296C86.7573 0.611231 79.2594 1.03863 71.6007 1.52602C63.9699 2.03591 10.6733 2.62827 2.76275 2.80073C1.8395 2.86072 0.923248 2.91321 0 2.9582V10.254C4.27352 10.3665 54.1289 10.374 58.3674 10.3365C60.5217 10.1941 65.7324 9.9841 72.37 9.77415C79.0076 9.57919 87.2189 9.45172 95.6121 9.46672C112.398 9.46672 129.891 10.0516 137.011 10.419C137.445 10.4265 137.879 10.4415 138.312 10.449C146.097 10.7864 155.588 11.1088 162.303 10.9589C165.401 10.8164 168.57 10.629 171.724 10.4415C170.346 10.1791 169.08 9.92412 167.982 9.68417C171.102 9.85663 174.214 10.0216 175.466 9.87163C182.251 9.68417 178.641 8.91934 176.291 7.99705C174.543 7.56215 177.173 7.14225 174.389 6.64736C176.466 6.75983 177.501 6.81982 179.586 6.93979C179.914 6.61737 173.13 6.80482 174.718 6.32493C176.683 6.54988 178.984 6.4524 181.061 6.56488C180.46 6.07749 173.892 6.05499 174.333 5.62759C175.487 5.5751 180.019 6.51239 180.572 5.97251C180.684 5.86754 178.599 5.74756 177.564 5.68758C184.02 5.82255 187.692 5.46263 181.999 4.57783V4.59283Z"
+                        fill="#E77622" />
+                </svg>
+                <p class="text-[12px] leading-[15.6px] mt-[21px] ">The functionality of the products is no different
+                    from other products on the supermarket shelf. Preserving southing and moisturizing functions of hand
+                    wash, thickens hair effects of shampoo, and effectiveness of household products.</p>
+            </div>
+            <div class="w-full md:w-[30%] md:pt-[10px] md:h-[50vh] lg:h-[45vh] bg-white py-[37px] px-[21px]">
+                <div class="w-full flex items-center justify-end md:flex hidden h-[60px] lg:mt-[10px] "><img
+                        src="./icons/Group 116.svg" alt=""></div>
+                <p class="md:h-[50px] text-[#4C5930] font-[700] text-[14px] flex justify-between items-center">
+                    AVAILABILITY
+                    <span><img class="md:hidden" src="./icons/Group 116.svg" alt=""></span>
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" class="relative mt-[30px] md:mt-[20px] right-[21px]" width="189"
+                    height="11" viewBox="0 0 189 11" fill="none">
+                    <path
+                        d="M181.999 4.59283C184.027 4.7053 186.832 5.08022 189 5.10271C189 5.10271 188.993 5.10271 188.986 5.09521C187.916 5.02773 186.097 4.82527 185.111 4.76529C186.321 4.83277 187.545 4.90026 188.762 4.96774C188.594 4.87776 188.391 4.79528 188.182 4.7053C187.286 4.59283 186.391 4.49535 185.44 4.44286C186.244 4.48785 187.056 4.53284 187.86 4.57783C187.3 4.36788 186.65 4.15793 185.929 3.96297C183.139 3.46808 180.516 2.81573 178.956 2.72575C166.408 1.86345 153.756 1.10612 141.068 0.603733C140.991 0.806187 141.621 1.03863 140.55 1.09862C137.193 1.1736 134.696 0.393781 131.332 0.48376C131.227 0.588736 131.122 0.701211 131.017 0.806187C128.478 0.588736 125.848 0.311299 123.149 0.0938487C118.099 0.0113674 113.056 -0.0186257 108.02 0.0113674C108.125 0.138838 108.167 0.251313 107.656 0.281306C105.558 0.341292 102.69 0.17633 99.6968 0.123842C99.2491 0.138838 98.8015 0.153835 98.3679 0.168832C98.0111 0.236316 97.9062 0.356289 97.8363 0.423774C96.4864 0.401279 95.2834 0.356289 94.1713 0.326296C86.7573 0.611231 79.2594 1.03863 71.6007 1.52602C63.9699 2.03591 10.6733 2.62827 2.76275 2.80073C1.8395 2.86072 0.923248 2.91321 0 2.9582V10.254C4.27352 10.3665 54.1289 10.374 58.3674 10.3365C60.5217 10.1941 65.7324 9.9841 72.37 9.77415C79.0076 9.57919 87.2189 9.45172 95.6121 9.46672C112.398 9.46672 129.891 10.0516 137.011 10.419C137.445 10.4265 137.879 10.4415 138.312 10.449C146.097 10.7864 155.588 11.1088 162.303 10.9589C165.401 10.8164 168.57 10.629 171.724 10.4415C170.346 10.1791 169.08 9.92412 167.982 9.68417C171.102 9.85663 174.214 10.0216 175.466 9.87163C182.251 9.68417 178.641 8.91934 176.291 7.99705C174.543 7.56215 177.173 7.14225 174.389 6.64736C176.466 6.75983 177.501 6.81982 179.586 6.93979C179.914 6.61737 173.13 6.80482 174.718 6.32493C176.683 6.54988 178.984 6.4524 181.061 6.56488C180.46 6.07749 173.892 6.05499 174.333 5.62759C175.487 5.5751 180.019 6.51239 180.572 5.97251C180.684 5.86754 178.599 5.74756 177.564 5.68758C184.02 5.82255 187.692 5.46263 181.999 4.57783V4.59283Z"
+                        fill="#E77622" />
+                </svg>
+                <p class="text-[12px] leading-[15.6px] mt-[35px]  ">We are working hard to keep our prices as low as possible for you, be on the look out for our affordable prices at the stores near you.</p>
+            </div>
+        </div>
+        <div class="w-full bg-[#FBF9EA] lg:px-[11%] py-[70px] flex items-center justify-center">
+            <div class="text-center flex items-center justify-center flex-wrap lg:justify-between lg:w-full ">
+                <p class="lg:flex hidden w-[50%] xl:text-[12px] xl:justify-between" ><a href="">@ copyright redaily 2022. All rights reserved</a> <span class="hidden xl:flex"><a href="">Terms of Use</a></span> <span class="hidden xl:flex"><a href="">Privacy Policy</a></span></p>
+                <div class="flex items-center justify-between w-[50%] lg:w-[20%] text-[30px] text-[#4C5930] xl:text-[25px] xl:w-[15%]">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <p class="mt-[20px] lg:hidden"><a href="">@ copyright redaily 2022. All rights reserved</a></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
